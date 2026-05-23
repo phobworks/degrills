@@ -100,7 +100,7 @@ export const services = [
     image: `${import.meta.env.BASE_URL}images/eq.png`,
     image2: `${import.meta.env.BASE_URL}images/eq2.png`,
     header: 'Equipment Leasing',
-    text: 'We provide dependable equipment leasing services to support construction, engineering, and industrial projects of all sizes. Our fleet includes cranes, forklifts, skips, and other heavy-duty equipment maintained for optimal performance, safety, and reliability on every project site.',
+    text: 'We provide dependable equipment leasing services to support construction, engineering, and industrial projects of all sizes. Our fleet includes cranes, forklifts, mud skips, and other heavy-duty equipment maintained for optimal performance, safety, and reliability on every project site.',
     link: '/services#equipment-leasing',
   },
 ];
