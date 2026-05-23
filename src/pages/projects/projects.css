@@ -1,0 +1,155 @@
+.projects-table__section {
+  margin-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+.projects-table__wrapper {
+  overflow-x: auto;
+}
+
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+.projects-table thead {
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+.projects-table th,
+.projects-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.projects-table tbody tr:hover {
+  background: rgba(255, 165, 0, 0.05);
+}
+
+.status {
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.completed {
+  background: rgba(0, 128, 0, 0.1);
+  color: green;
+}
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pagination-btn,
+.page-number {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease;
+  background: var(--white-color);
+  box-shadow: var(--box-shadow);
+}
+
+.page-number.active {
+  background: var(--orange-color);
+  color: var(--white-color);
+}
+
+.pagination-btn:hover,
+.page-number:hover {
+  transform: translateY(-3px);
+}
+
+.pagination-btn.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pagination-numbers {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .projects-table,
+  .projects-table thead,
+  .projects-table tbody,
+  .projects-table th,
+  .projects-table td,
+  .projects-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .projects-table thead {
+    display: none;
+  }
+
+  .projects-table tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .projects-table tr {
+    background: var(--white-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    border: 1px solid #eee;
+  }
+
+  .projects-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #f1f1f1;
+    text-align: right;
+    font-size: 0.95rem;
+  }
+
+  .projects-table td:last-child {
+    border-bottom: none;
+  }
+
+  .projects-table td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: var(--black-color);
+    text-align: left;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+
+  .pagination-btn,
+  .page-number {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,144 @@
+.about-page__section {
+  margin-top: 7rem;
+}
+
+.about-page__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.about-page__cards small {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--orange-color);
+}
+
+.about-page__cards p {
+  color: var(--gray-color);
+}
+
+.mv__section {
+  background-image: linear-gradient(to bottom, #242423, #1d1d1c, #161615, #0d0d0d, #000000);
+  padding: 3rem 0;
+}
+
+.mv__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mv__content small {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--orange-color);
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.mv__content h2 {
+  text-align: center;
+  color: var(--white-color);
+}
+
+.mv__cards {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.mv__card {
+  padding: 2rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--gray-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.ov__section {
+  margin: 5rem 0;
+}
+
+.ov__content h2,
+.ov__content p {
+  text-align: center;
+}
+
+.ov__content p {
+  color: var(--orange-color);
+}
+
+.ov__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.ov__card {
+  padding: 2rem;
+  border-radius: 0.6rem;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+
+  background: var(--white-color);
+}
+
+.ov__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(90deg, transparent, var(--orange-color), transparent);
+  background-size: 300% 300%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.ov__card:hover::before {
+  opacity: 1;
+  animation: borderMove 2s linear infinite;
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+.ov__card p {
+  color: var(--gray-color);
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .ov__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mv__section {
+    margin-top: 3rem;
+  }
+  .ov__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

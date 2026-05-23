@@ -1,0 +1,43 @@
+.other-banner__section {
+  background-image: linear-gradient(to right top, #df8b05, #e58e04, #eb9103, #f19502, #f79801, #f99c0f, #fba019, #fda421, #fcaa30, #faaf3d, #f9b449, #f8b955);
+  /* height: 350px; */
+  width: 100%;
+
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  /* mask-image: radial-gradient(#000 0%, #0000 80%); */
+
+  /* ✅ CENTER CONTENT */
+  display: flex;
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  padding: 6rem 0;
+}
+
+.other-banner__container {
+  text-align: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.other-banner__link {
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
+  color: var(--black-color);
+  gap: 1rem;
+}
+
+.other-banner__link a {
+  color: var(--black-color);
+  transform: var(--transition);
+}
+
+.other-banner__link a:hover {
+  color: var(--white-color);
+}
+
+.other-banner__container h1 {
+  color: var(--white-color);
+}
