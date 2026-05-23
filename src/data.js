@@ -50,16 +50,16 @@ export const items = [
 export const services = [
   {
     id: 'fabrication-construction',
-    image: '/images/fc.png',
-    image2: '/images/fc2.png',
+    image: `${import.meta.env.BASE_URL}images/fc.png`,
+    image2: `${import.meta.env.BASE_URL}images/fc2.png`,
     header: 'Fabrication & Construction',
     text: 'We provide high-quality piping and structural fabrication services tailored to the oil & gas, industrial, and construction sectors. Our team delivers durable steel structures, pipeline supports, platforms, and construction solutions with precision, safety, and strict adherence to industry standards. From greenfield to brownfield projects, we ensure efficient execution from concept to completion.',
     link: '/services#fabrication-construction',
   },
   {
     id: 'mechanical-maintenance',
-    image: '/images/mi.png',
-    image2: '/images/mi2.png',
+    image: `${import.meta.env.BASE_URL}images/mi.png`,
+    image2: `${import.meta.env.BASE_URL}images/mi2.png`,
     header: 'Mechanical Maintenance & Industrial Support',
     text: 'Our mechanical maintenance services are designed to improve equipment reliability, operational efficiency, and plant performance. We handle installation, commissioning, decommissioning, hydro-testing, and preventive maintenance for industrial facilities and production systems, ensuring minimal downtime and maximum productivity.',
     link: '/services#mechanical-maintenance',
@@ -67,16 +67,16 @@ export const services = [
   {
     id: 'electrical-instrumentation',
     slug: 'electrical-instrumentation',
-    image: '/images/ee.png',
-    image2: '/images/ee2.png',
+    image: `${import.meta.env.BASE_URL}images/ee.png`,
+    image2: `${import.meta.env.BASE_URL}images/ee2.png`,
     header: 'Electrical & Instrumentation',
     text: 'We deliver reliable electrical and instrumentation solutions for industrial and energy facilities. Our services include installation, calibration, testing, troubleshooting, and maintenance of electrical systems and control instruments to ensure safe, efficient, and uninterrupted operations.',
     link: '/services#electrical-instrumentation',
   },
   {
     id: 'pipeline',
-    image: '/images/pp.png',
-    image2: '/images/pp2.png',
+    image: `${import.meta.env.BASE_URL}images/pp.png`,
+    image2: `${import.meta.env.BASE_URL}images/pp2.png`,
     header: 'Pipeline Services',
     text: 'Degrills Integrated Services Limited provides professional pipeline solutions covering installation, maintenance, repairs, testing, and support services. We execute pipeline projects with a strong focus on safety, environmental compliance, operational integrity, and long-term performance.',
     link: '/services#pipeline',
@@ -89,16 +89,16 @@ export const services = [
   // },
   {
     id: 'corrosion-control',
-    image: '/images/co.png',
-    image2: '/images/co2.png',
+    image: `${import.meta.env.BASE_URL}images/co.png`,
+    image2: `${import.meta.env.BASE_URL}images/co2.png`,
     header: 'Corrosion Control',
     text: 'We help protect industrial assets through advanced corrosion prevention and surface protection services. Our blasting and industrial painting solutions are designed to extend equipment lifespan, improve structural integrity, and maintain operational efficiency in harsh environments.',
     link: '/services#corrosion-control',
   },
   {
     id: 'equipment-leasing',
-    image: '/images/eq.png',
-    image2: '/images/eq2.png',
+    image: `${import.meta.env.BASE_URL}images/eq.png`,
+    image2: `${import.meta.env.BASE_URL}images/eq2.png`,
     header: 'Equipment Leasing',
     text: 'We provide dependable equipment leasing services to support construction, engineering, and industrial projects of all sizes. Our fleet includes cranes, forklifts, skips, and other heavy-duty equipment maintained for optimal performance, safety, and reliability on every project site.',
     link: '/services#equipment-leasing',
@@ -126,22 +126,22 @@ export const hsebadges = [
 
 export const whychoose = [
   {
-    image: '/images/01.png',
+    image: `${import.meta.env.BASE_URL}images/01.png`,
     heading: 'Over 20 Years of Industry Experience',
     content: 'Delivering reliable engineering and industrial solutions backed by decades of hands-on field expertise.',
   },
   {
-    image: '/images/02.png',
+    image: `${import.meta.env.BASE_URL}images/02.png`,
     heading: 'Indigenous Expertise with Global Standards',
     content: 'Combining local industry knowledge with internationally recognized engineering and operational practices.',
   },
   {
-    image: '/images/03.png',
+    image: `${import.meta.env.BASE_URL}images/03.png`,
     heading: 'Strong HSE & Quality Management System',
     content: 'Committed to safe operations, quality assurance, and strict compliance with industry standards.',
   },
   {
-    image: '/images/05.png',
+    image: `${import.meta.env.BASE_URL}images/05.png`,
     heading: 'Proven Track Record in Oil & Gas Sector',
     content: 'Trusted by clients across the energy sector for consistent performance, professionalism, and project delivery.',
   },
@@ -149,31 +149,31 @@ export const whychoose = [
 
 export const clientlogo = [
   {
-    image: '/images/c1.jpeg',
+    image: `${import.meta.env.BASE_URL}images/c1.jpeg`,
   },
   {
-    image: '/images/c2.jpeg',
+    image: `${import.meta.env.BASE_URL}images/c2.jpeg`,
   },
   {
-    image: '/images/c3.jpeg',
+    image: `${import.meta.env.BASE_URL}images/c3.jpeg`,
   },
   {
-    image: '/images/c4.jpeg',
+    image: `${import.meta.env.BASE_URL}images/c4.jpeg`,
   },
   {
-    image: '/images/c5.jpeg',
+    image: `${import.meta.env.BASE_URL}images/c5.jpeg`,
   },
   {
-    image: '/images/c6.jpeg',
+    image: `${import.meta.env.BASE_URL}images/c6.jpeg`,
   },
   {
-    image: '/images/c7.jpeg',
+    image: `${import.meta.env.BASE_URL}images/c7.jpeg`,
   },
   {
-    image: '/images/c8.jpeg',
+    image: `${import.meta.env.BASE_URL}images/c8.jpeg`,
   },
   {
-    image: '/images/c9.jpeg',
+    image: `${import.meta.env.BASE_URL}images/c9.jpeg`,
   },
 ];
 
@@ -486,54 +486,70 @@ export const gallery = [
     id: 1,
     title: 'FABRICATED AND COATED PIPE SPOOLS FOR INSTALLATION AT UTONANA FS.',
     client: 'CHEVRON',
-    images: ['/images/gallery/f1/01.jpg', '/images/gallery/f1/02.jpg', '/images/gallery/f1/03.jpg'],
+    images: [
+      `${import.meta.env.BASE_URL}images/gallery/f1/01.jpg`,
+      `${import.meta.env.BASE_URL}images/gallery/f1/02.jpg`,
+      `${import.meta.env.BASE_URL}images/gallery/f1/03.jpg`,
+    ],
   },
   {
     id: 2,
     title: 'FABRICATION OF 60M³ SILOS, AND TANKS FOR UKARAFU/OIS',
     client: 'CHEVRON ',
-    images: ['/images/gallery/f2/01.jpg', '/images/gallery/f2/02.jpg'],
+    images: [`${import.meta.env.BASE_URL}images/gallery/f2/01.jpg`, `${import.meta.env.BASE_URL}images/gallery/f2/02.jpg`],
   },
   {
     id: 3,
     title: 'MAINTENANCE/REPAIR & REPLACEMENT PIPING WORKS FOR STANFORD MARINE VESSEL',
     client: 'STANFORD BUZZARD',
-    images: ['/images/gallery/f3/01.jpeg', '/images/gallery/f3/02.jpg'],
+    images: [`${import.meta.env.BASE_URL}images/gallery/f3/01.jpeg`, `${import.meta.env.BASE_URL}images/gallery/f3/02.jpg`],
   },
   {
     id: 4,
     title: 'FABRICATED PIPE LAYING PONTOON IN OUR FABRICATION WORKSHOP',
     client: 'SPDC ',
-    images: ['/images/gallery/f4/01.jpg', '/images/gallery/f4/02.jpg', '/images/gallery/f4/03.jpg'],
+    images: [
+      `${import.meta.env.BASE_URL}images/gallery/f4/01.jpg`,
+      `${import.meta.env.BASE_URL}images/gallery/f4/02.jpg`,
+      `${import.meta.env.BASE_URL}images/gallery/f4/03.jpg`,
+    ],
   },
   {
     id: 5,
     title: 'FABRICATED AND INSTALLED WELL HEAD PLATFORM',
     client: 'SPDC',
-    images: ['/images/gallery/f5/01.jpg', '/images/gallery/f5/02.jpg', '/images/gallery/f5/03.jpg'],
+    images: [
+      `${import.meta.env.BASE_URL}images/gallery/f5/01.jpg`,
+      `${import.meta.env.BASE_URL}images/gallery/f5/02.jpg`,
+      `${import.meta.env.BASE_URL}images/gallery/f5/03.jpg`,
+    ],
   },
   {
     id: 6,
     title: 'CROSS SECTION OF FITTERS AT OUR WORKSHOP CARRYING OUT FIT-UP OF  WELL HEAD PLATFORM, SOKU',
     client: 'SPDC',
-    images: ['/images/gallery/f6/01.jpg', '/images/gallery/f6/02.jpg'],
+    images: [`${import.meta.env.BASE_URL}images/gallery/f6/01.jpg`, `${import.meta.env.BASE_URL}images/gallery/f6/02.jpg`],
   },
   {
     id: 7,
     title: 'FABRICATED (20) SURFER LADDERS ',
     client: 'EXXON MOBIL',
-    images: ['/images/gallery/f7/01.jpg', '/images/gallery/f7/02.jpg'],
+    images: [`${import.meta.env.BASE_URL}images/gallery/f7/01.jpg`, `${import.meta.env.BASE_URL}images/gallery/f7/02.jpg`],
   },
   {
     id: 8,
     title: 'FIT UP OF 6" AND 2" OF PIPE SPOOLS READY FOR WELDING AT OUR FABRICATION SHOP FOR UGHELLI-WEST FS',
     client: 'NIGERIAN GAS COMPANY',
-    images: ['/images/gallery/f8/01.jpg', '/images/gallery/f8/02.jpg', '/images/gallery/f8/03.jpg'],
+    images: [
+      `${import.meta.env.BASE_URL}images/gallery/f8/01.jpg`,
+      ` ${import.meta.env.BASE_URL}images/gallery/f8/02.jpg`,
+      `${import.meta.env.BASE_URL}images/gallery/f8/03.jpg`,
+    ],
   },
   {
     id: 9,
     title: 'FIT-UP OF PLATFORM SUPPORT GOING ON BY SKILLED AND EXPERIENCED FITTERS',
     client: 'EXXON MOBIL ',
-    images: ['/images/gallery/f9/01.jpg', '/images/gallery/f9/02.jpg'],
+    images: [`${import.meta.env.BASE_URL}images/gallery/f9/01.jpg`, `${import.meta.env.BASE_URL}images/gallery/f9/02.jpg`],
   },
 ];
