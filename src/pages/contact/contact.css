@@ -52,15 +52,16 @@
   padding: 12px;
   margin-top: 15px;
   border: none;
-  background: #1e3a8a;
+  background: var(--orange-color);
   color: #fff;
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
+  transition: var(--transition);
 }
 
 .contact-form button:hover {
-  background: #162d6f;
+  background: var(--black-color);
 }
 
 .hidden-field {

@@ -81,12 +81,14 @@ export const services = [
     text: 'Degrills Integrated Services Limited provides professional pipeline solutions covering installation, maintenance, repairs, testing, and support services. We execute pipeline projects with a strong focus on safety, environmental compliance, operational integrity, and long-term performance.',
     link: '/services#pipeline',
   },
-  // {
-  //   image: '/images/nd.png',
-  //   header: 'NDT Inspection Services',
-  //   text: 'Our Non-Destructive Testing (NDT) services help clients detect structural defects and material weaknesses without damaging assets or interrupting operations. Using industry-approved inspection techniques, we ensure equipment integrity, quality assurance, and compliance with safety standards.',
-  //   link: '#',
-  // },
+  {
+    id: 'ndt-inspection',
+    image: `${import.meta.env.BASE_URL}images/nd.png`,
+    image2: `${import.meta.env.BASE_URL}images/nd2.png`,
+    header: 'NDT Inspection Services',
+    text: 'Our Non-Destructive Testing (NDT) services help clients detect structural defects and material weaknesses without damaging assets or interrupting operations. Using industry-approved inspection techniques, we ensure equipment integrity, quality assurance, and compliance with safety standards.',
+    link: '/services#ndt-inspection',
+  },
   {
     id: 'corrosion-control',
     image: `${import.meta.env.BASE_URL}images/co.png`,
@@ -94,6 +96,14 @@ export const services = [
     header: 'Corrosion Control',
     text: 'We help protect industrial assets through advanced corrosion prevention and surface protection services. Our blasting and industrial painting solutions are designed to extend equipment lifespan, improve structural integrity, and maintain operational efficiency in harsh environments.',
     link: '/services#corrosion-control',
+  },
+  {
+    id: 'training-workforce',
+    image: `${import.meta.env.BASE_URL}images/tr1.png`,
+    image2: `${import.meta.env.BASE_URL}images/tr2.png`,
+    header: 'Training & Workforce Development',
+    text: 'We provide practical industrial training programs in welding, pipe fitting, blasting, and painting designed to develop skilled technical personnel for engineering, oil & gas, and industrial operations. Our hands-on training approach equips trainees with industry-relevant knowledge, safety awareness, and operational competence required for real-world project environments.',
+    link: '/services#training-workforce',
   },
   {
     id: 'equipment-leasing',
@@ -484,6 +494,18 @@ export const projects = [
 export const gallery = [
   {
     id: 1,
+    title: 'FABRICATED AND PAINTING OF MUD SKIPS FOR LEASE.',
+    client: 'DEGRILLS',
+    images: [
+      `${import.meta.env.BASE_URL}images/gallery/f11/01.jpg`,
+      `${import.meta.env.BASE_URL}images/gallery/f11/02.jpg`,
+      `${import.meta.env.BASE_URL}images/gallery/f11/03.jpg`,
+      `${import.meta.env.BASE_URL}images/gallery/f11/04.jpg`,
+      `${import.meta.env.BASE_URL}images/gallery/f11/05.jpg`,
+    ],
+  },
+  {
+    id: 2,
     title: 'FABRICATED AND COATED PIPE SPOOLS FOR INSTALLATION AT UTONANA FS.',
     client: 'CHEVRON',
     images: [
@@ -493,19 +515,19 @@ export const gallery = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: 'FABRICATION OF 60M³ SILOS, AND TANKS FOR UKARAFU/OIS',
     client: 'CHEVRON ',
     images: [`${import.meta.env.BASE_URL}images/gallery/f2/01.jpg`, `${import.meta.env.BASE_URL}images/gallery/f2/02.jpg`],
   },
   {
-    id: 3,
+    id: 4,
     title: 'MAINTENANCE/REPAIR & REPLACEMENT PIPING WORKS FOR STANFORD MARINE VESSEL',
     client: 'STANFORD BUZZARD',
     images: [`${import.meta.env.BASE_URL}images/gallery/f3/01.jpeg`, `${import.meta.env.BASE_URL}images/gallery/f3/02.jpg`],
   },
   {
-    id: 4,
+    id: 5,
     title: 'FABRICATED PIPE LAYING PONTOON IN OUR FABRICATION WORKSHOP',
     client: 'SPDC ',
     images: [
@@ -515,7 +537,7 @@ export const gallery = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: 'FABRICATED AND INSTALLED WELL HEAD PLATFORM',
     client: 'SPDC',
     images: [
@@ -525,19 +547,19 @@ export const gallery = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: 'CROSS SECTION OF FITTERS AT OUR WORKSHOP CARRYING OUT FIT-UP OF  WELL HEAD PLATFORM, SOKU',
     client: 'SPDC',
     images: [`${import.meta.env.BASE_URL}images/gallery/f6/01.jpg`, `${import.meta.env.BASE_URL}images/gallery/f6/02.jpg`],
   },
   {
-    id: 7,
+    id: 8,
     title: 'FABRICATED (20) SURFER LADDERS ',
     client: 'EXXON MOBIL',
     images: [`${import.meta.env.BASE_URL}images/gallery/f7/01.jpg`, `${import.meta.env.BASE_URL}images/gallery/f7/02.jpg`],
   },
   {
-    id: 8,
+    id: 9,
     title: 'FIT UP OF 6" AND 2" OF PIPE SPOOLS READY FOR WELDING AT OUR FABRICATION SHOP FOR UGHELLI-WEST FS',
     client: 'NIGERIAN GAS COMPANY',
     images: [
@@ -547,7 +569,7 @@ export const gallery = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: 'FIT-UP OF PLATFORM SUPPORT GOING ON BY SKILLED AND EXPERIENCED FITTERS',
     client: 'EXXON MOBIL ',
     images: [`${import.meta.env.BASE_URL}images/gallery/f9/01.jpg`, `${import.meta.env.BASE_URL}images/gallery/f9/02.jpg`],

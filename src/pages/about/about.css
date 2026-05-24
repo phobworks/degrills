@@ -132,9 +132,6 @@
   .ov__cards {
     grid-template-columns: repeat(2, 1fr);
   }
-  .about-page__content {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -143,5 +140,17 @@
   }
   .ov__cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-page__content {
+    grid-template-columns: 1fr;
+  }
+  .mv__cards {
+    grid-template-columns: 1fr;
+  }
+  .ov__cards {
+    grid-template-columns: 1fr;
   }
 }
