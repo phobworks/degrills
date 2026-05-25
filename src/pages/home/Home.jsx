@@ -1,4 +1,5 @@
 import AchievmentBanner from '../../components/AchievmentBanner';
+import NewsSection from '../../components/NewsSection';
 import AboutHome from './AboutHome';
 import './home.css';
 import HomeBanner from './HomeBanner';
@@ -13,6 +14,7 @@ const Home = () => {
       <AboutHome />
       <ServicesHome />
       <WhyChoose />
+      <NewsSection />
     </>
   );
 };
